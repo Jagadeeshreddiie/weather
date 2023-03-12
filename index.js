@@ -19,7 +19,7 @@ async function getWeather(city){
     document.querySelector('.temp').innerHTML=Math.round(data.main.temp)+" °c";
     document.querySelector('.max-temp').innerHTML=data.main.temp_max+" °c";
     document.querySelector('.min-temp').innerHTML=data.main.temp_min+" °c";
-    document.querySelector('.humidity').innerHTML=data.main.humidity;
+    document.querySelector('.humidity').innerHTML=data.main.humidity+" %";
     document.querySelector('.wind').innerHTML=data.wind.speed+" kmph";
     weatherIcon.src="images/"+(data.weather[0].main.toLowerCase())+".png";
     document.querySelector('.error').style.display="none";
