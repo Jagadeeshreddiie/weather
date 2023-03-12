@@ -133,6 +133,13 @@ nav .title{
     .search input{
         width:200px;
     }
+    .search{
+        flex-direction: column;   
+    }
+    .search button{
+        margin-top:10px;
+        border-radius: 30%;
+    }
     .card{
         width:90%;
     }
