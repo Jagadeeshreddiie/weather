@@ -129,7 +129,7 @@ nav .title{
     font-size: 25px;
     font-weight: 600;
 }
-@media (min-width:100px and max-width:420px){
+@media (min-width:100px) and (max-width:480px){
     .card .search{
         display:flex;
         align-items:center;
