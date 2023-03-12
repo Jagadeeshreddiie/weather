@@ -129,14 +129,20 @@ nav .title{
     font-size: 25px;
     font-weight: 600;
 }
-@media (min-width:100px) and (max-width:480px){
-    .card .search{
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
-    }
+@media (max-width:480px){
     .search input{
-        flex:0;
-        padding:0 20px;
+        width:200px;
+    }
+    .card{
+        width:90%;
+    }
+    .card{
+        padding:10px;
+    }
+    .col{
+        margin: 0;
+    }
+    .col img{
+        margin-right:5px;
     }
 }
