@@ -1,11 +1,11 @@
-const apikey="1b019d6395cb6b5c84a3835690ed1177";
-const apiKEY="863242cfb2b1d357e6093d9a4df19a4b";
+const apikey="7fb89fce1019de0e4a5c38817fde01c2";
+// const apiKEY="863242cfb2b1d357e6093d9a4df19a4b";
 const but=document.querySelector(".search button");
 const btninput=document.querySelector(".search input");
 const url="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const weatherIcon=document.querySelector('.weather-icon');
 async function getWeather(city){
-    const response = await fetch(url+city+`&appid=${apiKEY}`);
+    const response = await fetch(url+`${city}&appid=${apikey}`);
     var data = await response.json();
     console.log(data);
     if (response.status==404){
