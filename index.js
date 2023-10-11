@@ -28,8 +28,9 @@ async function getWeather(city){
     }
 }
 but.addEventListener("click",(e)=>{
-    getWeather(btninput.value);
     e.preventDefault();
+    getWeather(btninput.value);
+    
 });
 
 
