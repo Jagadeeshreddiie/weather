@@ -27,8 +27,9 @@ async function getWeather(city){
     document.querySelector('.weather').style.display="block";
     }
 }
-but.addEventListener("click",()=>{
+but.addEventListener("click",(e)=>{
     getWeather(btninput.value);
+    e.preventDefault();
 });
 
 
