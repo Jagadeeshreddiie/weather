@@ -32,6 +32,7 @@ async function getWeather(city){
 but.addEventListener("click",(e)=>{
     e.preventDefault();
     getWeather(btninput.value);
+    btninput.textContent="";
     form.reset();
 });
 
