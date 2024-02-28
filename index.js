@@ -4,6 +4,7 @@ const but=document.querySelector(".search button");
 const btninput=document.querySelector(".search input");
 const url="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const weatherIcon=document.querySelector('.weather-icon');
+const form=document.getElementById("form");
 async function getWeather(city){
     const response = await fetch(url+`${city}&appid=${apikey}`);
     var data = await response.json();
@@ -25,6 +26,7 @@ async function getWeather(city){
     document.querySelector('.error').style.display="none";
     document.querySelector('.message').style.display="none";
     document.querySelector('.weather').style.display="block";
+    form.reset();
     }
 }
 but.addEventListener("click",(e)=>{
