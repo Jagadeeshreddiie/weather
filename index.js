@@ -26,13 +26,13 @@ async function getWeather(city){
     document.querySelector('.error').style.display="none";
     document.querySelector('.message').style.display="none";
     document.querySelector('.weather').style.display="block";
-    form.reset();
+    
     }
 }
 but.addEventListener("click",(e)=>{
     e.preventDefault();
     getWeather(btninput.value);
-    
+    form.reset();
 });
 
 
